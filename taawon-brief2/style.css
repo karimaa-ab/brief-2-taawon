@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px;
+  background-color: #f7e8c8;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #222;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar a {
+  color: #222;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.navbar .contact-btn {
+  background-color: #a83223;
+  color: white;
+  padding: 18px 30px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.navbar .contact-btn:hover {
+  background-color: #85271c;
+}
+.partner-page {
+  background-color: #f7e8c8;
+  color: #29251f;
+  width: 100%;
+}
+
+.hero {
+  min-height: 800px;
+  background:
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.05)
+    ),
+    url("images/partenaire.png") center / cover no-repeat;
+
+  display: flex;
+  align-items: center;
+  padding: 50px;
+}
+
+.hero-content {
+  max-width: 700px;
+  color: white;
+  position: absolute;
+}
+
+.hero h1 {
+  font-size: 80px;
+  margin-bottom: 50px;
+  margin-inline: 500px;
+}
+
+.hero p {
+  font-size: 30px;
+  line-height: 1.5;
+  margin-inline: 50px;
+
+
+}
+
+.form-section {
+  padding: 35px 5%;
+  background-color: #f7e8c8;
+}
+
+.form-section h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.form-description {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.partner-form fieldset {
+  border: none;
+  background-color: #fbefd8;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.partner-form legend {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px 50px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group label {
+  font-size: 16px;
+  color: #625748;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  max-width: 380px;
+  padding: 14px 16px;
+  border: 1px solid #eadfc9;
+  border-radius: 10px;
+  background-color: #fffdf8;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    min-height: 320px;
+    padding: 25px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .form-section h2 {
+    font-size: 28px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .partner-form fieldset {
+    padding: 20px;
+  }
+}
+
+/* Informations sur le partenariat */
+.partnership-info {
+    margin-top: 35px;
+    padding-top: 30px;
+    border-top: 1px solid #e5ded2;
+}
+
+/* Section title */
+.partnership-info h2 {
+    font-size: 26px;
+    color: #573b2a;
+    margin-bottom: 25px;
+}
+
+/* Space between form fields */
+.partnership-info .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+/* Field labels */
+.partnership-info .form-group label {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Dropdown menu */
+.partnership-info select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d6d0c5;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+/* Project description box */
+.partnership-info textarea {
+    width: 100%;
+    min-height: 140px;
+    padding: 13px;
+    border: 1px solid #d6d0c5;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: inherit;
+    line-height: 1.6;
+    resize: vertical;
+}
+
+/* Highlight fields when clicked */
+.partnership-info textarea:focus,
+.partnership-info select:focus {
+    outline: 2px solid #9f3529;
+    border-color: #9f3529;
+}
