@@ -1,13 +1,184 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+    <title>TAAWON</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <header class="header">
+        <a href="#" class="logo">TAAWON</a>
+
+        <nav class="navbar">
+            <a href="index.html">Accueil</a>
+            <a href="annuaire.html">Annuaire</a>
+            <a href="apropos.html">À propos</a>
+            <a href="partenaire.html">Partenaires</a>
+            <a href="contact.html" class="contact-btn">Contact</a>
+        </nav>
+    </header>
+
+    <main class="partner-page">
+
+        <!-- Hero section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Devenir partenaire</h1>
+                <p>
+                    Rejoignez Taawon et participez au développement
+                    de l'artisanat marocain
+                </p>
+            </div>
+        </section>
+
+        <!-- Form section -->
+        <section class="form-section">
+
+            <h2>Formulaire d'adhésion</h2>
+
+            <p class="form-description">
+                Remplissez ce formulaire pour rejoindre notre réseau de partenaires.
+            </p>
+
+            <form class="partner-form">
+
+                <!-- General information -->
+                <fieldset>
+                    <legend>Informations générales</legend>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="organisation">Nom de l'organisation</label>
+                            <input
+                                id="organisation"
+                                name="organisation"
+                                type="text"
+                                placeholder="Nom de votre organisation"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="type">Type de l'organisation</label>
+                            <select id="type" name="type">
+                                <option value="">Choisissez un type</option>
+                                <option value="association">Association</option>
+                                <option value="artisan">Artisan</option>
+                                <option value="cooperative">Coopérative</option>
+                                <option value="entreprise">Entreprise</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email de contact</label>
+                            <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                placeholder="exemple@email.com"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telephone">Téléphone</label>
+                            <input
+                                id="telephone"
+                                name="telephone"
+                                type="tel"
+                                placeholder="+212 6XX XXX XXX"
+                            >
+                        </div>
+
+                    </div>
+                </fieldset>
+
+                <!-- Partnership information -->
+                <div class="partnership-info">
+
+                    <h2>Informations sur le partenariat</h2>
+
+                    <div class="form-group">
+                        <label for="description">Description de votre projet</label>
+                        <textarea
+                            id="description"
+                            name="description"
+                            rows="5"
+                            placeholder="Présentez votre coopérative, votre savoir-faire et vos produits..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="partnership-type">Type de partenariat souhaité</label>
+                        <select
+                            id="partnership-type"
+                            name="partnership-type"
+                            required
+                        >
+                            <option value="">Choisissez un type de partenariat</option>
+                            <option value="visibilite">Visibilité et promotion</option>
+                            <option value="collaboration">Collaboration</option>
+                            <option value="accompagnement">Accompagnement</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <!-- Location -->
+                <div class="location-info">
+
+                    <h2>Localisation</h2>
+
+                    <div class="location-fields">
+
+                        <div class="form-group">
+                            <label for="ville">Ville</label>
+                            <input
+                                id="ville"
+                                name="ville"
+                                type="text"
+                                placeholder="Ex. : Dakhla"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="region">Région</label>
+                            <select id="region" name="region">
+                                <option value="">Choisissez votre région</option>
+                                <option value="dakhla-oued-ed-dahab">Dakhla-Oued Ed-Dahab</option>
+                                <option value="laayoune-sakia-el-hamra">Laâyoune-Sakia El Hamra</option>
+                                <option value="souss-massa">Souss-Massa</option>
+                                <option value="marrakech-safi">Marrakech-Safi</option>
+                                <option value="casablanca-settat">Casablanca-Settat</option>
+                                <option value="rabat-sale-kenitra">Rabat-Salé-Kénitra</option>
+                                <option value="autre">Autre région</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="adresse">Adresse</label>
+                            <input
+                                id="adresse"
+                                name="adresse"
+                                type="text"
+                                placeholder="Adresse de votre organisation"
+                            >
+                        </div>
+
+                    </div>
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
 </body>
 </html>
