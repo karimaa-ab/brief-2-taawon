@@ -112,6 +112,7 @@ body {
 .hero-content {
     max-width: 700px;
     color: white;
+    
 }
 
 .hero h1 {
@@ -569,4 +570,16 @@ Section title
     width: 160px;
     max-width: 100%;
     height: auto;
+}
+
+#titre {
+    font-family: serif;
+    font-size: 15vh;
+
+}
+#description{
+   font-family: serif;
+    font-size: 4vh;
+    font-weight: lighter;
+
 }
