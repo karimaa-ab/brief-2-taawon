@@ -10,7 +10,7 @@ body {
 
 
 
-/* ===== Taawon Header ===== */
+/*Taawon Header*/
 
 .header {
     display: flex;
@@ -50,7 +50,7 @@ body {
     color: #a83223;
 }
 
-/* Contact button */
+/*Contact button*/
 .navbar .contact-btn {
     display: inline-block;
     padding: 12px 20px;
@@ -66,7 +66,7 @@ body {
     color: white;
 }
 
-/* Mobile header */
+/*Mobile header*/
 @media (max-width: 900px) {
     .header {
         flex-direction: column;
@@ -91,7 +91,7 @@ body {
 
 
     
-/* ===== Hero Section ===== */
+/*Hero Section*/
 
 .partner-page {
     width: 100%;
@@ -124,7 +124,7 @@ body {
     line-height: 1.5;
 }
 
-/* ===== Form Section ===== */
+Form Section
 
 .form-section {
     padding: 35px 5%;
@@ -188,7 +188,7 @@ body {
     font-family: inherit;
 }
 
-/* ===== Mobile Layout ===== */
+/*Mobile*/
 
 @media (max-width: 700px) {
     .hero {
@@ -240,21 +240,20 @@ body {
 
 
 
-/* Informations sur le partenariat */
 .partnership-info {
     margin-top: 35px;
     padding-top: 30px;
     border-top: 1px solid #e5ded2;
 }
 
-/* Section title */
+Section title 
 .partnership-info h2 {
     font-size: 26px;
     color: #573b2a;
     margin-bottom: 25px;
 }
 
-/* Space between form fields */
+/*Space between fields*/
 .partnership-info .form-group {
     display: flex;
     flex-direction: column;
@@ -262,7 +261,7 @@ body {
     margin-bottom: 24px;
 }
 
-/* Field labels */
+/*Field labels */
 .partnership-info .form-group label {
     font-size: 15px;
     font-weight: bold;
@@ -281,7 +280,7 @@ body {
 }
 
 
-/* Project description box */
+/*Project description*/
 .partnership-info textarea {
     width: 100%;
     max-width: 900px;
@@ -296,14 +295,12 @@ body {
     box-sizing: border-box;
 }
 
-/* Highlight fields when clicked */
 .partnership-info textarea:focus,
 .partnership-info select:focus {
     outline: 2px solid #9f3529;
     border-color: #9f3529;
 }
 
-/* Location fields layout using Flexbox */
 .location-fields {
     display: flex;
     flex-wrap: wrap;
@@ -315,7 +312,6 @@ body {
     min-width: 0;
 }
 
-/* Document upload section */
 .upload-section {
     margin-top: 30px;
     padding: 24px;
@@ -361,7 +357,6 @@ body {
     font-size: 12px;
 }
 
-/* Consent and submit button */
 .form-footer {
     display: flex;
     flex-direction: column;
@@ -403,7 +398,6 @@ body {
     background-color: #85271c;
 }
 
-/* FAQ section */
 .faq-section {
     padding: 30px 5% 60px;
     background-color: #f7e8c8;
@@ -459,8 +453,6 @@ body {
         min-width: 0;
     }
 }
-
-/* ===== Footer ===== */
 
 .site-footer {
     background-color: #f7e8c8;
@@ -548,7 +540,6 @@ body {
     gap: 16px;
 }
 
-/* Responsive footer for mobile */
 @media (max-width: 700px) {
     .site-footer {
         padding: 30px 20px 20px;
